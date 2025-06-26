@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: rgb(30, 30, 30);
+        color: white;
+        display: grid;
+        margin: 0;
+        display: grid;
+        height: 100vh;
+        grid-template-areas:
+            "h h h h h"
+            "m m m m n"
+            "m m m m n"
+            "m m m m n"
+            "f f f f f"
+
+    }
+
+
+    header {
+        grid-area: h;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    header>div>button {
+        width: 120px;
+        height: 60px;
+        border-radius: 20px;
+        transition-duration: 0.5s;
+        margin-left: 8px;
+    }
+
+    header>div>button:hover {
+        transition-duration: 0.5s;
+        transform: scale(120%);
+        background-color: greenyellow;
+    }
+
+    nav {
+        grid-area: n;
+        display: flex;
+    }
+
+    main {
+        grid-area: m;
+        display: flex;
+    }
+
+    footer {
+        grid-area: f;
+        display: flex;
+    }
+</style>
+
+<body>
+    <header>
+        <img class="Logo" src=""> <img class="MRS" src="">
+        <div><button>Sobre</button>
+            <button>Mais</button>
+        </div>
+
+    </header>
+    <nav>Nav</nav>
+    <main>Main</main>
+    <footer>Footer</footer>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
