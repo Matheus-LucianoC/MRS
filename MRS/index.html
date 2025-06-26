@@ -16,13 +16,15 @@
         height: 100vh;
         grid-template-areas:
             "h h h h h"
-            "m m m m n"
-            "m m m m n"
-            "m m m m n"
+            "n m m m m"
+            "n m m m m"
+            "n m m m m"
             "f f f f f"
 
     }
 
+
+    /*Header*/
 
     header {
         grid-area: h;
@@ -30,35 +32,76 @@
         justify-content: space-around;
 
     }
-
+    header>div {
+        display:inline-block;
+        margin-top: 20px;
+        margin-left: 80%;
+    }
     header>div>button {
         width: 120px;
         height: 60px;
         border-radius: 20px;
         transition-duration: 0.5s;
-        margin-left: 8px;
+        margin-left: 12px;
+        border: none;
+        background-color: rgb(50, 50, 50);
+        color: white;
+        font-size: 110%;
     }
 
     header>div>button:hover {
         transition-duration: 0.5s;
         transform: scale(120%);
         background-color: greenyellow;
+        color: black;
     }
+
+
+    /*Nav*/
 
     nav {
         grid-area: n;
         display: flex;
     }
+    nav>div{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(50, 50, 50);
+        justify-content: space-around;
+    }
+    nav>div>button{
+        width: 200px;
+        height: 50px;
+        background-color: rgb(50, 50, 50);
+        border: none;
+        transition-duration: 0.3s;
+        color: rgb(151, 151, 151);
+        font-size: 150%;
+    }
+    nav>div>button:hover{
+        background-color: rgb(80, 80, 80);
+
+    }
+
+    /*Main*/
 
     main {
         grid-area: m;
         display: flex;
     }
 
+
+    /*Footer*/
+
     footer {
         grid-area: f;
         display: flex;
+        background-color: greenyellow;
     }
+
+
+
+
 </style>
 
 <body>
@@ -69,19 +112,26 @@
         </div>
 
     </header>
-    <nav>Nav</nav>
-    <main>Main</main>
-    <footer>Footer</footer>
+    <nav>
+        <div>
+            <button>Teste</button>
+            <button>Teste</button>
+            <button>Teste</button>
+            <button>Teste</button>
+            <button>Teste</button>
+            <button>Teste</button>
+            <button>Teste</button>
+            <button>Teste</button>
+        </div>
+    </nav>
 
+    <main>
 
+    </main>
 
-
-
-
-
-
-
-
+    <footer>
+        Footer
+    </footer>
 
 </body>
 
