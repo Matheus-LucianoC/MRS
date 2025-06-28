@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: rgb(30, 30, 30);
+        color: white;
+        display: grid;
+        margin: 0;
+        display: grid;
+        height: 100vh;
+        grid-template-areas:
+            "h h h h h"
+            "n i m m m"
+            "n i m m m"
+            "n i m m m"
+            "f f f f f"
+
+    }
+
+    /*Formatação*/
+
+    button,
+    h1,
+    h2,
+    h3,
+    p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    img{
+        border-radius: 20px;
+    }
+
+    /*Header*/
+
+    header {
+        grid-area: h;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    header>div {
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 5cap;
+    }
+
+    header>div>button {
+        width: 120px;
+        height: 60px;
+        border-radius: 20px;
+        transition-duration: 0.5s;
+        margin-left: 12px;
+        border: none;
+        background-color: rgb(50, 50, 50);
+        color: white;
+        font-size: 110%;
+    }
+
+    header>div>button:hover {
+        transition-duration: 0.5s;
+        transform: scale(120%);
+        background-color: greenyellow;
+        color: black;
+    }
+    header>h1{
+        margin-left: 1cm;
+        color:yellowgreen
+        
+    }
+    header>h2{
+        margin-left: 1cm;
+        margin-right: 2cm;
+        text-shadow: 2px 3px black;
+        transition-duration: 0.5s;
+    }
+    header>h2:hover{
+        color: greenyellow;
+        transition-duration: 0.5s;
+    }
+
+
+    /*Nav*/
+
+    nav {
+        grid-area: n;
+        display: flex;
+    }
+
+    nav>div {
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    nav>div>button {
+        width: 250px;
+        height: 140px;
+        background-color: rgb(50, 50, 50);
+        border: none;
+        transition-duration: 0.3s;
+        color: rgb(151, 151, 151);
+        font-size: 150%;
+        border: 1px;
+        border-color: white;
+        border-radius: 10px;
+    }
+
+    nav>div>button:hover {
+        background-color: rgb(80, 80, 80);
+
+    }
+
+    /*Main*/
+
+    main {
+        grid-area: m;
+        display: flex;
+    }
+
+
+    div.noticiasprincipais>article {
+        display: grid;
+        background-color: rgb(50, 50, 50);
+        width: 500px;
+        height: 400px;
+        margin-bottom: 4cm;
+        justify-content: space-around;
+        border-radius: 20px;
+        color: rgb(151, 151, 151);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        transition-duration: 0.5s;
+    }
+    
+    div.noticiasprincipais>article:hover {
+        background-color: rgb(80, 80, 80);
+    }
+
+    .texto {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    article:p {
+        grid-area: i;
+    }
+
+
+    /*Footer*/
+
+    footer {
+        grid-area: f;
+        display: flex;
+        background-color: greenyellow;
+        justify-content: center;
+    }
+    footer>h1{
+        text-align: center;
+        color:black
+    }
+
+    .botao {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    .imagem1 {
+        margin-top: 20px;
+        margin-left: 30px;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        font-weight: 200;
+    }
+
+    .imagem2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: 75px;
+        font-weight: 100px;
+    }
+    .imagem3{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: 75px;
+        font-weight: 100px;
+    }
+</style>
+
+<body>
+    <header>
+        <img class="Logo" src=""> 
+        
+        <h1>MRS</h1>
+        
+        <h2>Seu site de notícias confiaveis</h2>
+        
+        <div><button>Sobre</button>
+            <button>Mais</button>
+        </div>
+
+    </header>
+
+    <nav>
+        <div>
+            <button class="botao">
+                <img src="https://bubblegeek.com.br/media/pacific-rim-prime-video.jpg" class="imagem2">
+                Pacific rim 3? possiveis teorias para o proximo filme
+            </button>
+            <button class="botao">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhG93wQFtIxvXxGYE-w_OfgCac5uqs6RDU0N0Nr30A0LjNvhGdwxnh5JFLenJ6j_JwuCXCYuTjzHmViiq2MUSWVU3guDlUdzCzRl-vh-gha5ZaR9Du5uRSiS8L1PnUvtSDeONLjlksgdJKGtSUGmqURq-l1J5lCz9CsRmhzId4vDL5GyJw5D2XqXaaB/w640-h321-rw/Pok%C3%A9mon_Remakes_FireRed__LeafGreen.jpg"
+                    class="imagem2">
+                Melhor time para o pokemon Firered e Leafgreen
+            </button>
+            <button class="botao">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQotEgXQmwkIMohaVONo1vEtaWjeRmXMa8j3Q&s"
+                    class="imagem2">
+                como deltarune movimentou toda uma comunidade
+            </button>
+
+        </div>
+    </nav>
+
+    <main>
+        <div class="noticiasprincipais">
+            <article class=>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvRG6bSf0oUi6at7hKmPkfaVoUONXwGT8wfg&s"
+                    class="imagem1">
+                <p class="texto">Library of Ruina:<br>
+                    Jogo da Project Moon está promoção</p>
+            </article>
+            <article>
+                <img src="https://gamefm.com.br/wp-content/uploads/2025/04/Titanfall-3-esta-em-desenvolvimento-e-pode-chegar-em-2026-segundo-rumor-scaled.jpg.webp"
+                    class="imagem1">
+                <p class="texto">Titanfall 3: <br>
+                    Teorias do lançamento do jogo da EA</p>
+            </article>
+
+            <article>
+                <img src="https://cdn.wccftech.com/wp-content/uploads/2025/06/hytale-HD-scaled.jpeg" class="imagem1">
+                <p class="texto">Hytale: <br>
+                    Um cancelamento e volta inédita do projeto enlouquece os fãs!!</p>
+            </article>
+
+            <article>
+                <img src="https://clan.fastly.steamstatic.com/images/45540155/f1e9bfcba92815767555c544ba03e8acfb77f553_400x225.png" class="imagem1">
+                <p class="texto">FNaF Secret of the Mimic: <br>
+                    Uma análise geral sobre o jogo</p>
+            </article>
+
+            <article>
+                <img src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/ncom/software/switch-2/70010000096813/8a2fc51b02035bf067a473a66938322f1f1570bf21034f0ad2134ce93b0d1cac" class="imagem1">
+                <p class="texto">Tech Demo do nintendo switch 2: <br>
+                    Custando 60 reais? Entenda o caso</p>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <h1>Feito por Renan Aprígio e Matheus Luciano</h1>
+    </footer>
+
+</body>
+
+</html>
